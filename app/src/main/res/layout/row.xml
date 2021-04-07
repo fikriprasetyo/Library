@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="3dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@color/whiteColor"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/add_image"
+            android:background="@drawable/menu"
+            android:id="@+id/profileIv"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/profileIv"
+            android:layout_toEndOf="@id/profileIv"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Buku"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blackColor"
+                android:id="@+id/name"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Tahun Terbit"
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/age"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Jumlah Halaman"
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/phone"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Deskripsi"
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/des"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/editBtn"
+            app:srcCompat="@drawable/ic_action_edit"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
